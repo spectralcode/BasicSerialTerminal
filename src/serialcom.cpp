@@ -59,11 +59,6 @@ void SerialCom::readData()
 
 	//emit received command
 	emit responseReceived(dataString);
-	
-	//handle special commands
-	if(dataString.contains("for you", Qt::CaseInsensitive)){
-		emit startRecordingRequested();
-	}
 }
 
 void SerialCom::handleError(QSerialPort::SerialPortError error)
