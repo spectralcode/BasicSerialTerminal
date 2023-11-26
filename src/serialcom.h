@@ -28,7 +28,6 @@ signals:
 	void responseReceived(const QString &response);
 	void connectionEstablished(bool connected);
 	void errorOccurred(const QString &errorString);
-	void startRecordingRequested();
 };
 
 #endif // SERIALCOM_H
